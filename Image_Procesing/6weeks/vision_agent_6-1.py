@@ -1,5 +1,3 @@
-# 프로그램 6-1 PyQt로 간단한 GUI 만들기 (버튼을 클릭하면 삑 소리 들려주기)
-# 사용자가 제공한 이미지를 기반으로 전체 코드 구성
 
 from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton, QLabel  # 필요한 위젯만 명시적으로 임포트
 import sys
