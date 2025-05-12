@@ -219,6 +219,6 @@ if __name__ == '__main__':
     action_dim = gym.make('MountainCar-v0').action_space.n
     optimal_agent = DQNAgent(state_dim, action_dim, HIDDEN_LAYER_SIZE, LEARNING_RATE, GAMMA,
                      BUFFER_SIZE, BATCH_SIZE, EPSILON_START, EPSILON_END,
-                     EPSILON_DECAY, TARGET_UPDATE_FREQUENCY) # TypeError 발생 지점: 필요한 인자들을 전달해야 함
+                     EPSILON_DECAY, TARGET_UPDATE_FREQUENCY)
     optimal_agent.q_network.load_state_dict(torch.load('best_dqn_model.pth'))
     create_video(optimal_agent, filename="best_policy_video_2.mp4")
